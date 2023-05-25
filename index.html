@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Decodificador</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa-logo">
+				<h1><img src="logo_alura.svg" alt="Logo da Alura"></h1>
+			</div>
+		</header>
+
+		
+		<main>
+			<section class="caixa-principal">
+
+				<div class="">
+					<textarea class="text-area" id="text-area" name="text-area" color="#0A3871" cols="41" rows="4" placeholder="Digite seu texto aqui"></textarea>
+				</div>
+				
+
+            	<div class="informacao">
+            		<img src="icone_!.svg" alt="Icone Exclamação">
+               		<h6>Apenas letras minúsculas e sem acento.</h6>
+           		</div>
+
+            	<div class="enviar">
+               		<button class="enviar-cripto" id="btnCriptografar" onclick="btnCriptografar()">Criptografar</button>
+                	<button class="voltar-cripto" id="btnDescriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+            	</div>
+			
+			</section>
+
+            <section class="caixa-retangular1">
+
+            	<div class="caixa-codificador">
+            		<img class="imagem-codificador" src="icone.svg" alt="Garoto com uma lupa analisando um diamante">
+            		<ul class="mensagem">
+						<li><p class="item1">Nenhuma mensagem encontrada</p></li>
+						<li><p class="item2">Digite um texto que deseja Criptografar ou Descriptografar.</p></li>
+					</ul>
+				</div>
+
+				<div class="novacaixa-codificador">
+				<textarea class="text-area-codificador" id="text-area-codificador" name="text-area-codificador" cols="41" rows="4"></textarea>
+
+				<button class="botao-copiar" id="botao-copiar" onclick="copiarTexto()"> Copiar</button>	
+            	</div>
+
+            </section>
+
+
+		</main>
+
+		<footer class="footer navbar-fixed-bottom">
+			<p class="copyright">&copy; Challenge ONE - Decodificador de Texto T5 - 2023 
+			by Rogerio Cruz</p>
+		</footer>
+
+		<script src="script.js"></script>
+
+	</body>
+</html>
+
